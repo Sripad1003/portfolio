@@ -10,8 +10,23 @@ interface ResumeButtonProps {
 
 export function ResumeButton({ className, variant = "default" }: ResumeButtonProps) {
   const handleDownloadResume = () => {
-    // Link to your actual resume file
-    window.open("/resume.pdf", "_blank")
+    // Create an anchor element
+    const link = document.createElement("a")
+
+    // Set the href to the resume file
+    link.href = "/resume.pdf"
+
+    // Set the download attribute to force download
+    link.download = "Chilivery_Sripad_Resume.pdf"
+
+    // Append to the document
+    document.body.appendChild(link)
+
+    // Trigger the click event
+    link.click()
+
+    // Clean up
+    document.body.removeChild(link)
   }
 
   return (
