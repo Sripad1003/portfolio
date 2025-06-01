@@ -4,16 +4,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 const About = () => {
   const highlights = [
     {
-      icon: <Code className="h-8 w-8 text-primary" />,
-      title: "Full-Stack Development",
-      description: "Experience with React.js, Node.js, and modern web technologies",
-    },
-    {
-      icon: <Zap className="h-8 w-8 text-primary" />,
-      title: "Real-Time Applications",
-      description: "Built applications with Socket.IO and WebRTC for synchronized experiences",
-    },
-    {
       icon: <Database className="h-8 w-8 text-primary" />,
       title: "AI/ML Integration",
       description: "Implemented machine learning models for intelligent applications",
@@ -23,6 +13,16 @@ const About = () => {
       title: "Problem Solving",
       description: "Strong foundation in data structures, algorithms, and system design",
     },
+    {
+      icon: <Zap className="h-8 w-8 text-primary" />,
+      title: "Real-Time Applications",
+      description: "Built applications with Socket.IO and WebRTC for synchronized experiences",
+    },
+    {
+      icon: <Code className="h-8 w-8 text-primary" />,
+      title: "Full-Stack Development",
+      description: "Experience with React.js, Node.js, and modern web technologies",
+    },
   ]
 
   return (
@@ -31,10 +31,9 @@ const About = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold mb-4 section-heading">About Me</h2>
           <p className="max-w-2xl mx-auto text-muted-foreground">
-            Computer Science undergraduate with hands-on experience in full-stack development, real-time web
-            applications, and AI/ML. Proven ability to build scalable solutions like synced media apps, intelligent
-            chatbots, and recommendation engines. Skilled in Java, C, Python, Data Structures, Problem solving and
-            machine learning.
+            Computer Science undergraduate with hands-on experience in AI/ML, real-time web applications, and full-stack
+            development. Proven ability to build intelligent chatbots, recommendation engines, and synced media apps.
+            Skilled in Python, Java, C, Data Structures, Problem solving and machine learning.
           </p>
         </div>
 

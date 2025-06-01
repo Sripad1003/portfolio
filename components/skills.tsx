@@ -2,24 +2,35 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Progress } from "@/components/ui/progress"
 
 const Skills = () => {
+  // Reorder the skill categories to put AI/ML related skills first and web development last
   const skillCategories = [
     {
-      category: "Languages",
+      category: "CS Fundamentals",
       skills: [
-        { name: "Java", level: 90 },
-        { name: "Python", level: 85 },
-        { name: "C++", level: 80 },
-        { name: "C", level: 85 },
+        { name: "Data Structures", level: 90 },
+        { name: "Algorithms", level: 85 },
+        { name: "OOPs", level: 90 },
+        { name: "DBMS", level: 75 },
+        { name: "Operating Systems", level: 70 },
       ],
     },
     {
-      category: "Web Development",
+      category: "Languages",
       skills: [
-        { name: "React.js", level: 85 },
-        { name: "HTML/CSS", level: 90 },
-        { name: "Node.js", level: 80 },
-        { name: "Express.js", level: 75 },
-        { name: "WebRTC", level: 80 },
+        { name: "Python", level: 85 },
+        { name: "Java", level: 90 },
+        { name: "C", level: 85 },
+        { name: "C++", level: 80 },
+      ],
+    },
+    {
+      category: "AI/ML & Tools",
+      skills: [
+        { name: "scikit-learn", level: 75 },
+        { name: "TensorFlow", level: 65 },
+        { name: "Flask", level: 75 },
+        { name: "Git", level: 90 },
+        { name: "Postman", level: 85 },
       ],
     },
     {
@@ -32,23 +43,13 @@ const Skills = () => {
       ],
     },
     {
-      category: "Tools & Libraries",
+      category: "Web Development",
       skills: [
-        { name: "Git", level: 90 },
-        { name: "Postman", level: 85 },
-        { name: "Flask", level: 75 },
-        { name: "scikit-learn", level: 75 },
-        { name: "TensorFlow", level: 65 },
-      ],
-    },
-    {
-      category: "CS Fundamentals",
-      skills: [
-        { name: "Data Structures", level: 90 },
-        { name: "Algorithms", level: 85 },
-        { name: "OOPs", level: 90 },
-        { name: "DBMS", level: 75 },
-        { name: "Operating Systems", level: 70 },
+        { name: "React.js", level: 85 },
+        { name: "HTML/CSS", level: 90 },
+        { name: "Node.js", level: 80 },
+        { name: "Express.js", level: 75 },
+        { name: "WebRTC", level: 80 },
       ],
     },
   ]

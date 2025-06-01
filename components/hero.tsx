@@ -17,8 +17,8 @@ const Hero = () => {
             Computer Science Undergraduate & Full-Stack Developer
           </h2>
           <p className="text-muted-foreground mb-8 max-w-lg">
-            Passionate about building scalable solutions with expertise in full-stack development, real-time web
-            applications, and AI/ML.
+            Passionate about building intelligent solutions with expertise in AI/ML, problem solving, and full-stack
+            development.
           </p>
           <div className="flex flex-wrap gap-4">
             <Button asChild>
