@@ -23,7 +23,7 @@ public/
 
 Finally, let's update the hero section to use your actual profile photo:
 
-```typescriptreact file="components/hero.tsx"
+\`\`\`typescriptreact file="components/hero.tsx"
 [v0-no-op-code-block-prefix]import { ArrowRight, Github, Linkedin, Mail, Phone } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
