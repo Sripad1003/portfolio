@@ -41,7 +41,7 @@ const Projects = () => {
         "Dynamic media handling",
         "Shared interactive experience",
       ],
-      demoLink: "https://viberoom.vercel.app",
+      demoLink: "https://viberoom-aimw.onrender.com/",
       sourceLink: "https://github.com/Sripad1003/viberoom",
       image: "/projects/viberoom.png",
       delay: "delay-100",
