@@ -29,13 +29,13 @@ const About = () => {
     {
       icon: <Database className="h-8 w-8 text-primary" />,
       title: "AI/ML Integration",
-      description: "Implemented machine learning models for intelligent applications",
+      description: "Built scalable ML applications with RAG pipelines, LLMs, and intelligent systems",
       delay: "delay-100",
     },
     {
       icon: <Server className="h-8 w-8 text-primary" />,
       title: "Problem Solving",
-      description: "Strong foundation in data structures, algorithms, and system design",
+      description: "GATE 2025 qualified with strong foundation in data structures and algorithms",
       delay: "delay-200",
     },
     {
@@ -47,7 +47,7 @@ const About = () => {
     {
       icon: <Code className="h-8 w-8 text-primary" />,
       title: "Full-Stack Development",
-      description: "Experience with React.js, Node.js, and modern web technologies",
+      description: "Experience with FastAPI, React.js, and modern web technologies",
       delay: "delay-400",
     },
   ]
@@ -66,9 +66,9 @@ const About = () => {
         >
           <h2 className="text-3xl font-bold mb-4 section-heading">About Me</h2>
           <p className="max-w-2xl mx-auto text-muted-foreground">
-            Computer Science undergraduate with hands-on experience in AI/ML, real-time web applications, and full-stack
-            development. Proven ability to build intelligent chatbots, recommendation engines, and synced media apps.
-            Skilled in Python, Java, C, Data Structures, Problem solving and machine learning.
+            Computer Science undergraduate with a focus on AI/ML, intelligent systems, and full-stack development. GATE
+            2025 qualified with proven ability to build scalable, real-world ML applications using cutting-edge
+            technologies. Skilled in Python, Java, C++, Data Structures, and machine learning.
           </p>
         </div>
 

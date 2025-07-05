@@ -29,8 +29,26 @@ const Projects = () => {
 
   const projectsData = [
     {
+      title: "SmartDocQA - Enhanced Document Q&A System",
+      date: "Dec 2024",
+      description:
+        "Built a multi-format Q&A system using FastAPI and Gemini AI for context-aware responses, integrated with Streamlit frontend and session handling.",
+      technologies: ["Python", "FastAPI", "Streamlit", "Gemini AI", "scikit-learn", "Pandas"],
+      features: [
+        "Multi-format document processing",
+        "RAG pipeline implementation",
+        "Real-time answer evaluation using SQuAD metrics",
+        "Intelligent caching for scalability",
+        "Context-aware responses with Gemini AI",
+      ],
+      demoLink: "",
+      sourceLink: "https://github.com/Sripad1003/smartdocqa",
+      image: "/projects/smartdoc.jpg",
+      delay: "delay-100",
+    },
+    {
       title: "VibeRoom - Real-Time Music Sync Platform",
-      date: "Apr 2025",
+      date: "Apr 2024",
       description:
         "Developed a real-time web app that allows users to listen to YouTube music in sync and engage in audio conversations, creating a shared, interactive experience.",
       technologies: ["WebRTC", "YouTube IFrame API", "Socket.IO", "React.js"],
@@ -44,14 +62,14 @@ const Projects = () => {
       demoLink: "https://viberoom-aimw.onrender.com/",
       sourceLink: "https://github.com/Sripad1003/viberoom",
       image: "/projects/viberoom.png",
-      delay: "delay-100",
+      delay: "delay-200",
     },
     {
       title: "Recipe Realm (Team)",
       date: "Sep 2024",
       description:
-        "Created a full-stack recipe generator app that provides personalized recipe suggestions based on user-input ingredients, utilizing semantic similarity techniques for accurate matching.",
-      technologies: ["MERN Stack", "Web Scraping", "LLM Chat", "Semantic Similarity"],
+        "Created a recipe generator app using semantic similarity to suggest personalized meals from user-input ingredients, with conversational LLM-powered chatbot.",
+      technologies: ["Python", "MongoDB", "React", "Express", "LLMs", "Web Scraping"],
       features: [
         "Personalized recipe suggestions",
         "Semantic similarity for ingredient matching",
@@ -62,25 +80,25 @@ const Projects = () => {
       demoLink: "",
       sourceLink: "https://github.com/Sripad1003/recipe-realm",
       image: "/projects/recipe-realm.png",
-      delay: "delay-200",
+      delay: "delay-300",
     },
     {
       title: "AI/ML Chatbot for NMCG (Team)",
       date: "Feb 2024",
       description:
-        "Developed a Reinforcement Learning Chatbot for the National Mission Clean Ganga to improve user engagement on water conservation, deployed across museums and websites for scalable access.",
-      technologies: ["Reinforcement Learning", "scikit-learn", "Cosine Similarity", "Voice-to-Text"],
+        "Developed an AI chatbot using Reinforcement Learning and Cosine Similarity for India's National Mission Clean Ganga initiative with natural conversations via voice-to-text.",
+      technologies: ["Python", "Flask", "scikit-learn", "NLTK", "HTML", "CSS", "Render"],
       features: [
         "Reinforcement Learning implementation",
         "Cosine Similarity for intent recognition",
         "Voice-to-text support",
-        "Deployed across museums and websites",
-        "Water conservation awareness focus",
+        "Contextual memory for conversations",
+        "Interactive educational content delivery",
       ],
       demoLink: "https://nmcg-chatbot.onrender.com",
       sourceLink: "https://github.com/Sripad1003/nmcg-chatbot",
       image: "/projects/nmcg-chatbot.jpg",
-      delay: "delay-300",
+      delay: "delay-400",
     },
   ]
 
@@ -95,12 +113,12 @@ const Projects = () => {
         >
           <h2 className="text-3xl font-bold mb-4 section-heading">Projects</h2>
           <p className="max-w-2xl mx-auto text-muted-foreground">
-            Here are some of the projects I've worked on, showcasing my skills in AI/ML, real-time applications, and
+            Here are some of the projects I've worked on, showcasing my skills in AI/ML, intelligent systems, and
             full-stack development.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projectsData.map((project, index) => (
             <Card
               key={index}
@@ -158,7 +176,7 @@ const Projects = () => {
                     <Button
                       variant="outline"
                       size="sm"
-                      className="flex items-center hover:scale-105 transition-transform duration-300"
+                      className="flex items-center hover:scale-105 transition-transform duration-300 bg-transparent"
                     >
                       <ExternalLink className="mr-1 h-4 w-4" /> Live Demo
                     </Button>
@@ -169,7 +187,7 @@ const Projects = () => {
                     <Button
                       variant="outline"
                       size="sm"
-                      className="flex items-center hover:scale-105 transition-transform duration-300"
+                      className="flex items-center hover:scale-105 transition-transform duration-300 bg-transparent"
                     >
                       <Github className="mr-1 h-4 w-4" /> Source Code
                     </Button>

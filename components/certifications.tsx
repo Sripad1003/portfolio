@@ -1,4 +1,4 @@
-import { Award, ExternalLink, Trophy, Code, Star } from "lucide-react"
+import { Award, ExternalLink, Trophy, Code, Star, GraduationCap } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import Link from "next/link"
 
@@ -25,6 +25,11 @@ const Certifications = () => {
   ]
 
   const achievements = [
+    {
+      title: "GATE 2025 (CS) Qualified",
+      description: "Score: 456, AIR: 9703, Top 5.68% nationwide",
+      icon: <GraduationCap className="h-6 w-6 text-blue-500" />,
+    },
     {
       title: "NCAT 2025 (Naukri Campus)",
       description: "All India Rank: 24,811",

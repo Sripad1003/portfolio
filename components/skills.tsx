@@ -24,42 +24,44 @@ const Skills = () => {
     {
       category: "Languages",
       skills: [
-        { name: "Python", level: 85 },
-        { name: "Java", level: 90 },
-        { name: "C", level: 85 },
+        { name: "Python", level: 90 },
+        { name: "Java", level: 85 },
         { name: "C++", level: 80 },
+        { name: "C", level: 80 },
+        { name: "JavaScript", level: 75 },
       ],
       delay: "delay-200",
     },
     {
       category: "AI/ML & Tools",
       skills: [
-        { name: "scikit-learn", level: 75 },
-        { name: "TensorFlow", level: 65 },
-        { name: "Flask", level: 75 },
-        { name: "Git", level: 90 },
-        { name: "Postman", level: 85 },
+        { name: "scikit-learn", level: 80 },
+        { name: "Hugging Face LLMs", level: 75 },
+        { name: "NLTK", level: 75 },
+        { name: "Pandas", level: 85 },
+        { name: "NumPy", level: 80 },
       ],
       delay: "delay-300",
+    },
+    {
+      category: "Web Development",
+      skills: [
+        { name: "Flask", level: 80 },
+        { name: "FastAPI", level: 75 },
+        { name: "React", level: 75 },
+        { name: "HTML/CSS", level: 85 },
+        { name: "WebRTC", level: 70 },
+      ],
+      delay: "delay-400",
     },
     {
       category: "Databases & Cloud",
       skills: [
         { name: "MongoDB", level: 80 },
         { name: "SQL", level: 75 },
+        { name: "GitHub", level: 90 },
         { name: "Render", level: 70 },
-        { name: "GitHub Pages", level: 85 },
-      ],
-      delay: "delay-400",
-    },
-    {
-      category: "Web Development",
-      skills: [
-        { name: "React.js", level: 85 },
-        { name: "HTML/CSS", level: 90 },
-        { name: "Node.js", level: 80 },
-        { name: "Express.js", level: 75 },
-        { name: "WebRTC", level: 80 },
+        { name: "Streamlit", level: 75 },
       ],
       delay: "delay-500",
     },
@@ -113,8 +115,8 @@ const Skills = () => {
         >
           <h2 className="text-3xl font-bold mb-4 section-heading">Technical Skills</h2>
           <p className="max-w-2xl mx-auto text-muted-foreground">
-            I have experience with a wide range of technologies and tools, allowing me to build comprehensive solutions
-            for various problems.
+            I have experience with a wide range of technologies and tools, allowing me to build comprehensive AI/ML
+            solutions and scalable applications for various problems.
           </p>
         </div>
 
