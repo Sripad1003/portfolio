@@ -144,9 +144,9 @@ const Projects = () => {
                 isVisible ? `animate-slide-in-up ${project.delay}` : "opacity-0 translate-y-10"
               }`}
             >
-              <div className="h-48 overflow-hidden relative">
+              <div className="h-64 overflow-hidden relative">
                 <img
-                  src={project.image || "/placeholder.svg?height=192&width=384"}
+                  src={project.image || "/placeholder.svg?height=256&width=384"}
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />

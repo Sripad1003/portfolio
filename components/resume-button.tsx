@@ -10,23 +10,28 @@ interface ResumeButtonProps {
 
 export function ResumeButton({ className, variant = "default" }: ResumeButtonProps) {
   const handleDownloadResume = () => {
-    // Create an anchor element
-    const link = document.createElement("a")
+    try {
+      // First try to open in new tab to check if PDF is accessible
+      const newTab = window.open("/resume.pdf", "_blank")
 
-    // Set the href to the resume file
-    link.href = "/resume.pdf"
+      // If popup is blocked or fails, fall back to direct download
+      setTimeout(() => {
+        const link = document.createElement("a")
+        link.href = "/resume.pdf"
+        link.download = "Chilivery_Sripad_Resume.pdf"
+        link.target = "_blank"
+        link.rel = "noopener noreferrer"
 
-    // Set the download attribute to force download
-    link.download = "Chilivery_Sripad_Resume.pdf"
-
-    // Append to the document
-    document.body.appendChild(link)
-
-    // Trigger the click event
-    link.click()
-
-    // Clean up
-    document.body.removeChild(link)
+        // Append to body, click, and remove
+        document.body.appendChild(link)
+        link.click()
+        document.body.removeChild(link)
+      }, 100)
+    } catch (error) {
+      console.error("Error downloading resume:", error)
+      // Fallback: just open the PDF in a new tab
+      window.open("/resume.pdf", "_blank")
+    }
   }
 
   return (
