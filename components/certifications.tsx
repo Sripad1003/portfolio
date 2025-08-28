@@ -37,13 +37,15 @@ const Certifications = () => {
     },
     {
       title: "LeetCode Problem Solving",
-      description: "Completed over 600 Data Structures and Algorithms problems",
+      description: "Completed over 700+ Data Structures and Algorithms problems",
       icon: <Code className="h-6 w-6 text-green-500" />,
+      link: "https://leetcode.com/u/SripadChilivery/",
     },
     {
       title: "CodeChef Rating",
       description: "Achieved 2-star rating",
       icon: <Star className="h-6 w-6 text-orange-500" />,
+      link: "https://www.codechef.com/users/sripadch10/",
     },
   ]
 
@@ -83,7 +85,7 @@ const Certifications = () => {
                         href={cert.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:text-primary"
+                        className="transition-opacity duration-300 hover:text-primary"
                       >
                         <ExternalLink className="h-4 w-4" />
                       </Link>
@@ -96,7 +98,7 @@ const Certifications = () => {
                         href={cert.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-primary hover:underline mt-2 inline-block opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                        className="text-primary hover:underline mt-2 inline-block transition-opacity duration-300"
                       >
                         View Certificate
                       </Link>
@@ -115,14 +117,34 @@ const Certifications = () => {
                 <Card key={index} className="border hover:shadow-lg hover:scale-105 transition-all duration-300 group">
                   <CardHeader className="flex flex-row items-center gap-4 pb-2">
                     <div className="group-hover:scale-110 transition-transform duration-300">{achievement.icon}</div>
-                    <div>
+                    <div className="flex-1">
                       <CardTitle className="text-lg group-hover:text-primary transition-colors duration-300">
                         {achievement.title}
                       </CardTitle>
                     </div>
+                    {achievement.link && (
+                      <Link
+                        href={achievement.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="transition-opacity duration-300 hover:text-primary"
+                      >
+                        <ExternalLink className="h-4 w-4" />
+                      </Link>
+                    )}
                   </CardHeader>
                   <CardContent>
                     <p className="text-muted-foreground">{achievement.description}</p>
+                    {achievement.link && (
+                      <Link
+                        href={achievement.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-primary hover:underline mt-2 inline-block transition-opacity duration-300"
+                      >
+                        View Profile
+                      </Link>
+                    )}
                   </CardContent>
                 </Card>
               ))}

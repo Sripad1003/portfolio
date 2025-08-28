@@ -1,6 +1,6 @@
 "use client"
 
-import { ArrowRight, Github, Linkedin, Mail, Phone } from "lucide-react"
+import { ArrowRight, Github, Linkedin, Mail, Phone, Code, Trophy } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { useEffect, useState } from "react"
@@ -54,7 +54,11 @@ const Hero = () => {
                 View Projects <ArrowRight className="ml-2 h-4 w-4" />
               </a>
             </Button>
-            <Button variant="outline" asChild className="hover:scale-105 transition-transform duration-300">
+            <Button
+              variant="outline"
+              asChild
+              className="hover:scale-105 transition-transform duration-300 bg-transparent"
+            >
               <a href="#contact">Contact Me</a>
             </Button>
           </div>
@@ -84,6 +88,22 @@ const Hero = () => {
               className="text-muted-foreground hover:text-green-500 transition-all duration-300 hover:scale-125 hover:-translate-y-1"
             >
               <Phone className="h-6 w-6" />
+            </Link>
+            <Link
+              href="https://leetcode.com/u/SripadChilivery/"
+              target="_blank"
+              className="text-muted-foreground hover:text-yellow-500 transition-all duration-300 hover:scale-125 hover:-translate-y-1"
+              title="LeetCode Profile"
+            >
+              <Code className="h-6 w-6" />
+            </Link>
+            <Link
+              href="https://www.codechef.com/users/sripadch10/"
+              target="_blank"
+              className="text-muted-foreground hover:text-orange-500 transition-all duration-300 hover:scale-125 hover:-translate-y-1"
+              title="CodeChef Profile"
+            >
+              <Trophy className="h-6 w-6" />
             </Link>
           </div>
         </div>

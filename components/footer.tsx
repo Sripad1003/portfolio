@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { Github, Linkedin, Mail, ArrowUp } from "lucide-react"
+import { Github, Linkedin, Mail, ArrowUp, Code, Trophy } from "lucide-react"
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -39,6 +39,22 @@ const Footer = () => {
             </Link>
             <Link href="mailto:chiliverysripad8@gmail.com" className="hover:text-destructive transition-colors">
               <Mail className="h-6 w-6" />
+            </Link>
+            <Link
+              href="https://leetcode.com/u/SripadChilivery/"
+              target="_blank"
+              className="hover:text-yellow-500 transition-colors"
+              title="LeetCode Profile"
+            >
+              <Code className="h-6 w-6" />
+            </Link>
+            <Link
+              href="https://www.codechef.com/users/sripadch10/"
+              target="_blank"
+              className="hover:text-orange-500 transition-colors"
+              title="CodeChef Profile"
+            >
+              <Trophy className="h-6 w-6" />
             </Link>
           </div>
 

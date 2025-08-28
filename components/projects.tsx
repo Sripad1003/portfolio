@@ -29,6 +29,24 @@ const Projects = () => {
 
   const projectsData = [
     {
+      title: "DeliverIQ - Full-Stack Logistics Platform",
+      date: "Jul 2025",
+      description:
+        "Built a comprehensive full-stack logistics platform connecting customers with drivers for goods transportation, featuring intelligent vehicle recommendations based on item dimensions and weight.",
+      technologies: ["Next.js", "TypeScript", "React.js", "Authentication", "Real-time Tracking"],
+      features: [
+        "Intelligent vehicle recommendations based on item dimensions and weight",
+        "Role-based authentication with encrypted data storage",
+        "Real-time order tracking system",
+        "Admin dashboard with user management and driver verification",
+        "Security controls and comprehensive user management",
+      ],
+      demoLink: "https://deliveriq-demo.vercel.app/",
+      sourceLink: "https://github.com/Sripad1003/deliveriq",
+      image: "/projects/deliveriq.jpg", // Updated image path
+      delay: "delay-100",
+    },
+    {
       title: "SmartDocQA - Enhanced Document Q&A System",
       date: "Dec 2024",
       description:
@@ -44,7 +62,7 @@ const Projects = () => {
       demoLink: "",
       sourceLink: "https://github.com/Sripad1003/smartdocqa",
       image: "/projects/smartdoc.jpg",
-      delay: "delay-100",
+      delay: "delay-200",
     },
     {
       title: "VibeRoom - Real-Time Music Sync Platform",
@@ -54,7 +72,7 @@ const Projects = () => {
       technologies: ["WebRTC", "YouTube IFrame API", "Socket.IO", "React.js"],
       features: [
         "Peer-to-peer audio calls using WebRTC",
-        "Synchronized YouTube music playback",
+        "Synchronized YouTube music playbook",
         "Multi-user synchronization with Socket.IO",
         "Dynamic media handling",
         "Shared interactive experience",
@@ -62,14 +80,14 @@ const Projects = () => {
       demoLink: "https://viberoom-aimw.onrender.com/",
       sourceLink: "https://github.com/Sripad1003/viberoom",
       image: "/projects/viberoom.png",
-      delay: "delay-200",
+      delay: "delay-300",
     },
     {
       title: "Recipe Realm (Team)",
       date: "Sep 2024",
       description:
         "Created a recipe generator app using semantic similarity to suggest personalized meals from user-input ingredients, with conversational LLM-powered chatbot.",
-      technologies: ["Python", "MongoDB", "React", "Express", "LLMs", "Web Scraping"],
+      technologies: ["Python", "React", "Express", "LLMs", "Web Scraping", "MERN Stack"],
       features: [
         "Personalized recipe suggestions",
         "Semantic similarity for ingredient matching",
@@ -80,7 +98,7 @@ const Projects = () => {
       demoLink: "",
       sourceLink: "https://github.com/Sripad1003/recipe-realm",
       image: "/projects/recipe-realm.png",
-      delay: "delay-300",
+      delay: "delay-400",
     },
     {
       title: "AI/ML Chatbot for NMCG (Team)",
@@ -98,7 +116,7 @@ const Projects = () => {
       demoLink: "https://nmcg-chatbot.onrender.com",
       sourceLink: "https://github.com/Sripad1003/nmcg-chatbot",
       image: "/projects/nmcg-chatbot.jpg",
-      delay: "delay-400",
+      delay: "delay-500",
     },
   ]
 
