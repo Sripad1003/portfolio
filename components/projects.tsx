@@ -43,7 +43,7 @@ const Projects = () => {
       ],
       demoLink: "https://deliveriq-demo.vercel.app/",
       sourceLink: "https://github.com/Sripad1003/deliveriq",
-      image: "/projects/deliveriq.jpg", // Updated image path
+      image: "/projects/deliveriq.png", // Updated image path
       delay: "delay-100",
     },
     {
