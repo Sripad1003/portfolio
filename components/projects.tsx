@@ -43,7 +43,7 @@ const Projects = () => {
       ],
       demoLink: "https://deliveriq-demo.vercel.app/",
       sourceLink: "https://github.com/Sripad1003/deliveriq",
-      image: "/projects/deliveriq.png", // Updated image path
+      image: "/projects/deliveriq.svg", // Updated image path
       delay: "delay-100",
     },
     {
@@ -140,15 +140,15 @@ const Projects = () => {
           {projectsData.map((project, index) => (
             <Card
               key={index}
-              className={`overflow-hidden border hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-translate-y-4 group ${
+              className={`overflow-hidden border hover:shadow-2xl transition-all duration-250 hover:scale-105 hover:-translate-y-4 group ${
                 isVisible ? `animate-slide-in-up ${project.delay}` : "opacity-0 translate-y-10"
               }`}
             >
               <div className="h-64 overflow-hidden relative">
                 <img
-                  src={project.image || "/placeholder.svg?height=256&width=384"}
+                  src={project.image || `/placeholder.svg?height=256&width=384`}
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-10001"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>

@@ -12,15 +12,15 @@ export function ResumeButton({ className, variant = "default" }: ResumeButtonPro
   const handleDownloadResume = () => {
     try {
       // First try to open in new tab to check if PDF is accessible
-      const newTab = window.open("/resume.pdf", "_blank")
+      // const newTab = window.open("/resume.pdf", "_blank")
 
       // If popup is blocked or fails, fall back to direct download
       setTimeout(() => {
         const link = document.createElement("a")
         link.href = "/resume.pdf"
-        link.download = "Chilivery_Sripad_Resume.pdf"
-        link.target = "_blank"
-        link.rel = "noopener noreferrer"
+        link.download = "Sripad_Resume.pdf"
+        // link.target = "_blank"
+        // link.rel = "noopener noreferrer"
 
         // Append to body, click, and remove
         document.body.appendChild(link)

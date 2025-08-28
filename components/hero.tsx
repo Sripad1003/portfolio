@@ -108,13 +108,13 @@ const Hero = () => {
           </div>
         </div>
         <div className="md:w-1/2 flex justify-center animate-slide-in-right">
-          <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-background shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105 group">
+          <div className="relative w-64 h-70 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-background shadow-xl hover:shadow-l transition-all hover:scale-105">
             <img
               src="/profile.jpg"
               alt="Chilivery Sripad"
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-250"></div>
           </div>
         </div>
       </div>
