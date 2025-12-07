@@ -41,7 +41,7 @@ const Projects = () => {
         "Admin dashboard with user management and driver verification",
         "Security controls and comprehensive user management",
       ],
-      demoLink: "https://deliveriq-demo.vercel.app/",
+      demoLink: "https://deliveriq.vercel.app/",
       sourceLink: "https://github.com/Sripad1003/deliveriq",
       image: "/projects/deliveriq.svg", // Updated image path
       delay: "delay-100",
